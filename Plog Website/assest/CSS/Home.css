@@ -15,7 +15,7 @@ body {
 
 }
 
-@media(min-width:900px){
+
 .container {
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -25,7 +25,7 @@ body {
     "main main main main main main main main"
     "ft ft ft ft ft ft ft ft";
   /* border: 2px solid yellow; */
-}
+
 
 }
 /* .box {
@@ -165,8 +165,22 @@ span {
   padding: 10px;
  
 }
+.content .fig2{
+  position: absolute; 
+  top: 600px;
+  right: 150px;
+  color: black; 
+  width: 210px;
+  font-size: 19px; 
+  padding: 10px;
+ 
+}
 
-
+figcaption{
+  position: absolute; 
+  bottom: 50px;
+  color: red;
+}
 /* --------------------------------------------Footer-------------------------------------------- */
 
 .home-screen{
@@ -225,4 +239,27 @@ background-color: red;
 
 .footer{
   color: white;
+}
+
+
+@media (min-width:576px){ /* Small Devices */
+  .container {
+    max-width: 549px;  
+  }  
+}
+
+@media (min-width:768px){ /* Medium Devices */
+  .container {
+    max-width: 720px;  
+  }  
+}
+@media (min-width:992px){ /* Desktops Devices */
+  .container {
+    max-width: 1055px;  
+  }  
+}
+@media (min-width:1200px){ /* Large Screens */
+  .container {
+    max-width: 1140px;  
+  }  
 }

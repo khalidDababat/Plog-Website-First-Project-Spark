@@ -13,7 +13,7 @@ body {
 
 }
 
-@media(min-width: 600px) and (max-width:900px) {
+
   .container {
     display: grid;
     grid-template-columns: 300px 300px 300px;
@@ -23,8 +23,9 @@ body {
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
     /* border: 2px solid yellow; */
+   
   }
-}
+
 
 
 
@@ -138,9 +139,10 @@ nav ul li a:hover {
 
 .header .Intro h2 span {
   color: red;
-}
+} 
 
-/* -------------------------------------------Header -------------------------------------- */
+
+------------------------------------------Header -------------------------------------- */
 .content .post-blog .post img {
 
   width: 100%;
@@ -261,4 +263,39 @@ nav ul li a:hover {
 
 span {
   color: red
+}
+
+@media (min-width:576px){ /* Small Devices */
+  .container {
+    max-width: 549px;  
+  }  
+  .fig2{
+    max-width: 549px; 
+  } 
+}
+
+@media (min-width:768px){ /* Medium Devices */
+  .container {
+    max-width: 720px;  
+  } 
+  .fig2{
+    max-width: 720px; 
+  } 
+}
+@media (min-width:992px){ /* Desktops Devices */
+  .container {
+    max-width: 960px;  
+  }  
+
+  .fig2{
+    max-width: 960px; 
+  }
+}
+@media (min-width:1200px){ /* Large Screens */
+  .container {
+    max-width: 1140px;  
+  }  
+  .fig2{
+    max-width: 1140px; 
+  }
 }
