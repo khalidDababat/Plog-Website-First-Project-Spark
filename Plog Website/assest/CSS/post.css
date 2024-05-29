@@ -14,17 +14,17 @@ body {
 }
 
 
-  .container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 100px 940px;
-    grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
-      "main main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-    /* border: 2px solid yellow; */
-   
-  }
+.container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px 940px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+  /* border: 2px solid yellow; */
+
+}
 
 
 
@@ -139,22 +139,26 @@ nav ul li a:hover {
 
 .header .Intro h2 span {
   color: red;
-} 
+}
 
 
-------------------------------------------Header -------------------------------------- */
-.content .post-blog .post img {
+------------------------------------------Header -------------------------------------- */ 
 
-  width: 100%;
-  height: 200px;
+.container .content  .post-blog .post img {
+
+  width: 33%;
+  height: 25%;
+  border-radius: 30%;
+  margin: 10px;
+  padding: 25px;
 
 }
 
 .post-blog {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
-  margin: 15px;
+  grid-gap: 10px;
+  margin: 10px;
 
 }
 
@@ -162,10 +166,10 @@ nav ul li a:hover {
   border: 2px solid black;
   color: black;
   background-color: white;
-  padding: 10px;
+  padding: 9px;
   overflow: auto;
   font-size: 19px;
-  height: 400px;
+  height: 280px;
   border-radius: 50px;
 
 }
@@ -184,15 +188,16 @@ nav ul li a:hover {
 .content .Skils {
 
 
-  position: absolute; 
+  position: absolute;
   background-color: black;
   top: 600px;
   right: 40px;
   padding: 15px;
   margin: 10px;
 }
-.content .Skils p{
-    color: red;
+
+.content .Skils p {
+  color: red;
 
 }
 
@@ -265,37 +270,124 @@ span {
   color: red
 }
 
-@media (min-width:576px){ /* Small Devices */
-  .container {
-    max-width: 549px;  
-  }  
-  .fig2{
-    max-width: 549px; 
-  } 
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+/* Small Screen*/
+@media screen and (max-width:400px) {
+
+  .header {
+   width: 100%; 
+   height: 100px;
+  
+  }
+
+  .post-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    grid-gap: 10px;
+    margin: 10px;
+  
+  }
+  
+  .post-blog .post {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    padding: 9px;
+    overflow: auto;
+    font-size: 19px;
+    height: 280px;
+    border-radius: 50px;
+  
+  }
+
+  .header nav {
+
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  
+.logo-photo {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
-@media (min-width:768px){ /* Medium Devices */
-  .container {
-    max-width: 720px;  
-  } 
-  .fig2{
-    max-width: 720px; 
-  } 
-}
-@media (min-width:992px){ /* Desktops Devices */
-  .container {
-    max-width: 960px;  
-  }  
+.content .Skils {
 
-  .fig2{
-    max-width: 960px; 
-  }
+
+  position: absolute;
+  background-color: black;
+  top: 760px;
+  right: 60px;
+  padding: 15px;
+  margin: 10px;
 }
-@media (min-width:1200px){ /* Large Screens */
-  .container {
-    max-width: 1140px;  
-  }  
-  .fig2{
-    max-width: 1140px; 
+.footer fieldset {
+  padding: 0px;
+  width: 330px;
+  margin: 0px;
+
+}
+
+
+.footer .Info {
+  background-color: black;
+  width: 303px;
+  height: 161px;
+  position: relative;
+  bottom: 90px;
+  left: 340px;
+  padding: 0px;
+  background: transparent;
+}
+
+}
+
+
+
+
+
+
+
+
+/* Medume Screen*/
+@media screen and (min-width:401px) and (max-width:768px) {
+
+
+  .post-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+    grid-gap: 14px;
+    margin: 10px;
+  
   }
+
+  .content .Skils {
+
+
+    position: absolute;
+    background-color: black;
+    top: 470px;
+    right: 60px;
+    padding: 15px;
+    margin: 10px;
+  }
+
+  
+
 }
