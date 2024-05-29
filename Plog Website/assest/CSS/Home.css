@@ -22,15 +22,15 @@ body {
     "hd hd hd hd hd hd hd hd"
     "main main main main main main main main"
     "ft ft ft ft ft ft ft ft";
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 
 
 }
 
-.box {
+/* .box {
   border: 1px solid red;
   background: #F8FA9D;
-}
+} */
 
 .header {
   grid-area: hd;
@@ -54,7 +54,7 @@ body {
 }
 
 
-.container .content a img{
+.container .content a img {
   width: 33%;
   height: 25%;
   border-radius: 30%;
@@ -248,23 +248,35 @@ figcaption {
 /* Small Screen*/
 @media screen and (max-width:400px) {
 
- 
-  
+
+
   .container .fig1 {
 
     position: absolute;
-    top:660px;
+    top: 682px;
     right: 128px;
     color: black;
-    width: 240px;
-    font-size: 18px;
-  
+    width: 190px;
+    font-size: 15px;
+
   }
 
+  .content .Intro {
+    margin-right: 500px;
+  }
 
+  .logo-photo {
+   
+    position: absolute;
+    top: 0px;
+    right: 10px;
+  }
 
-  
-
+  .logo {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+}
 
 }
 

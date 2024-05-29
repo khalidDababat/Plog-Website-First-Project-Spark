@@ -324,7 +324,7 @@ span {
   display: inline-block;
   position: absolute;
   top: 0px;
-  right: 0px;
+  right: 10px;
 }
 
 .content .Skils {
@@ -356,6 +356,9 @@ span {
   background: transparent;
 }
 
+
+
+
 }
 
 
@@ -382,12 +385,17 @@ span {
 
     position: absolute;
     background-color: black;
-    top: 470px;
-    right: 60px;
+    top: 800px;
+    right: 40px;
     padding: 15px;
     margin: 10px;
   }
 
-  
+  .logo-photo {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+  }
 
 }
