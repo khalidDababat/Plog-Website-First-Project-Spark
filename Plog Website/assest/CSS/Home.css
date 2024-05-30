@@ -248,9 +248,16 @@ figcaption {
 /* Small Screen*/
 @media screen and (max-width:400px) {
 
+  .header nav {
+    position: absolute;
+    top: 65px;
+    left: 15px;
+    display: inline;
+} 
 
 
-  .container .fig1 {
+
+  /* .container .fig1 {
 
     position: absolute;
     top: 682px;
@@ -259,7 +266,7 @@ figcaption {
     width: 190px;
     font-size: 15px;
 
-  }
+  } */
 
   .content .Intro {
     margin-right: 500px;
@@ -289,21 +296,15 @@ figcaption {
 @media screen and (min-width:401px) and (max-width:768px) {
 
 
-  figcaption {
-
-    color: red;
-  }
-
-  .container .fig1 {
-
+  
+  /* .container .fig1 {
+                                 Deleted From Home Page 
     position: absolute;
     top: 697px;
     right: 100px;
     color: black;
-    /* width: 200px; */
-    font-size: 16px;
-
-  }
+    
+  }  */
 
 
   .footer .Info {
@@ -321,4 +322,8 @@ figcaption {
     padding: 10px;
     width: 360px;
   }
+
+
+
+  
 }

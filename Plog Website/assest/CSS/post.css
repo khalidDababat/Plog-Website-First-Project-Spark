@@ -200,8 +200,19 @@ nav ul li a:hover {
   color: red;
 
 }
+.container .fig1 {
+  position: absolute;
+  top: 470px;
+  right: 440px;
+  color: black;
+  width: 200px;
+  font-size: 15px;
+}
 
-
+[src]{
+  width: 200px; 
+  height: 175pxpx;
+}
 /* --------------------------------------------Footer-------------------------------------------- */
 
 .home-screen {
@@ -312,11 +323,9 @@ span {
   .header nav {
 
     position: absolute;
-    top: 0px;
-    left: 150px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    top: 70px;
+    left: 30px;
+    display: inline;
   }
 
   
@@ -332,8 +341,8 @@ span {
 
   position: absolute;
   background-color: black;
-  top: 760px;
-  right: 60px;
+  top: 780px;
+  right: 115px;
   padding: 15px;
   margin: 10px;
 }
@@ -357,7 +366,14 @@ span {
 }
 
 
-
+.container .fig1 {
+  position: absolute;
+  top: 500px;
+  right: -140px;
+  color: black;
+  width: 200px;
+  font-size: 15px;
+}
 
 }
 
@@ -385,8 +401,8 @@ span {
 
     position: absolute;
     background-color: black;
-    top: 800px;
-    right: 40px;
+    top: 680px;
+    right: 30px;
     padding: 15px;
     margin: 10px;
   }
@@ -398,4 +414,24 @@ span {
     right: 10px;
   }
 
+  .post-blog .post {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    padding: 9px;
+    overflow: auto;
+    font-size: 19px;
+    height: 240px;
+    border-radius: 50px;
+
 }
+.container .fig1 {
+  position: absolute;
+  top: 680px;
+  right: 500px;
+  color: black;
+  width: 200px;
+  font-size: 15px;
+}
+}
+
