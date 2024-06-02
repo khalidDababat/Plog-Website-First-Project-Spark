@@ -16,14 +16,14 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 100px 940px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 600px;
   grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "main main main main main main main main"
     "ft ft ft ft ft ft ft ft";
   /* border: 2px solid yellow; */
-
+  width: 100%;
 }
 
 
@@ -48,7 +48,7 @@ body {
 .footer {
   grid-area: ft;
   background-color: black;
-  padding: 0px 50px;
+  padding: 0px 5px;
   width: 100%;
   height: 170px;
 }
@@ -156,23 +156,30 @@ nav ul li a:hover {
 
 .post-blog {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 10px;
   margin: 10px;
 
 }
 
 .post-blog .post {
-  border: 2px solid black;
+  border: 1px solid black;
   color: black;
   background-color: white;
   padding: 9px;
   overflow: auto;
   font-size: 19px;
-  height: 280px;
-  border-radius: 50px;
+  height: 230px;
+  
 
+} 
+.content  .post-blog .post img{
+
+   width: 100%; 
+   height: 80%; 
+   border-radius: 30px;
 }
+
 
 .content .Intro {
   text-align: center;
@@ -190,29 +197,38 @@ nav ul li a:hover {
 
   position: absolute;
   background-color: black;
-  top: 600px;
-  right: 40px;
-  padding: 15px;
+  top: 400px;
+  right: 30px;
+  padding: 10px;
   margin: 10px;
 }
 
-.content .Skils p {
-  color: red;
+.content .Skils h2{
 
+  color: white;
 }
+
 .container .fig1 {
   position: absolute;
-  top: 470px;
-  right: 440px;
+  top: 430px;
+  right: 360px;
   color: black;
   width: 200px;
   font-size: 15px;
 }
 
-[src]{
-  width: 200px; 
-  height: 175pxpx;
+.container .fig1 img{
+  width: 80%; 
+  
 }
+
+
+
+
+
+
+
+
 /* --------------------------------------------Footer-------------------------------------------- */
 
 .home-screen {
@@ -289,149 +305,308 @@ span {
 
 /* ----------------------------------------------------------------------------------------- */
 
+@media screen and (max-width:900px){
 
-
-/* Small Screen*/
-@media screen and (max-width:400px) {
-
-  .header {
-   width: 100%; 
-   height: 100px;
-  
-  }
-
-  .post-blog {
+  .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-    grid-gap: 10px;
-    margin: 10px;
-  
-  }
-  
-  .post-blog .post {
-    border: 2px solid black;
-    color: black;
-    background-color: white;
-    padding: 9px;
-    overflow: auto;
-    font-size: 19px;
-    height: 280px;
-    border-radius: 50px;
-  
+    grid-template-columns:1fr;
+    grid-template-rows: 100px 600px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+    /* border: 2px solid yellow; */
+    width: 100%;
   }
 
   .header nav {
-
     position: absolute;
-    top: 70px;
-    left: 30px;
-    display: inline;
-  }
-
-  
-.logo-photo {
-  display: inline-block;
-  position: absolute;
-  top: 0px;
-  right: 10px;
+    top: 0px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+  .post-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+    grid-gap: 10px;
+    margin: 10px;
+}
+
 
 .content .Skils {
-
-
   position: absolute;
   background-color: black;
-  top: 780px;
-  right: 115px;
-  padding: 15px;
+  top: 430px;
+  right: 0px;
+  padding: 10px;
   margin: 10px;
 }
-.footer fieldset {
-  padding: 0px;
-  width: 330px;
-  margin: 0px;
 
+
+}
+
+@media screen and (max-width:800px){
+
+  .post-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.home-screen {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  background: transparent;
+}
+
+.footer fieldset {
+  padding: 10px;
+  width: 200px;
+  margin: 10px;
+}
+.footer .Info {
+  background-color: black;
+  width: 300px;
+  height: 160px;
+  position: relative;
+  bottom: 130px;
+  left: 380px;
+  padding: 5px;
+  background: transparent;
+}
+
+}
+
+
+@media screen and (max-width:768px){
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 600px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    /* border: 2px solid yellow; */
+    width: 100%;
+}
+.header nav {
+  position: absolute;
+  top: 0px;
+  left: 170px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.header nav ul {
+  list-style: none;
+  display: inline;
+  margin-left: 0px;
+  padding: 10px;
+}
+
+.header nav {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.footer fieldset {
+  padding: 10px;
+  width: 190px;
+  margin: 10px;
+}
+
+.home-screen {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 170px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
+  background: transparent;
+}
+.footer .Info {
+  background-color: black;
+  width: 300px;
+  height: 160px;
+  position: relative;
+  bottom: 130px;
+  left: 280px;
+  padding: 10px;
+  background: transparent;
+}
+
+.post-blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: 10px;
+  margin: 10px;
+}
+}
+
+
+@media screen and (max-width:600px){
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 600px;
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+    /* border: 2px solid yellow; */
+    width: 100%;
+}
+
+.post-blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-gap: 3px;
+  margin: 5px;
 }
 
 
 .footer .Info {
   background-color: black;
-  width: 303px;
-  height: 161px;
+  width: 300px;
+  height: 160px;
   position: relative;
-  bottom: 90px;
-  left: 340px;
-  padding: 0px;
+  bottom: 130px;
+  left: 260px;
+  padding: 10px;
+  background: transparent;
+}
+.header nav {
+  position: absolute;
+  top: 0px;
+  left: 156px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+}
+
+@media screen and (max-width:400px){
+      
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 600px;
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+    /* border: 2px solid yellow; */
+    width: 100%;
+}
+
+.post-blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-gap: 2px;
+  margin: 5px;
+}
+.post-blog .post {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  overflow: auto;
+  font-size: 15px;
+  height: 210px;
+}
+
+.container .fig1 {
+  position: absolute;
+  top: 440px;
+  right: 0px;
+  color: black;
+  width: 200px;
+  font-size: 11px;
+}
+.content .Skils {
+  position: absolute;
+  background-color: black;
+  top: 430px;
+  right: 215px;
+  padding: 2px;
+  margin: 10px;
+}
+
+.home-screen {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 90px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  background-color: red;
   background: transparent;
 }
 
+.footer fieldset {
+  padding: 10px;
+  width: 100px;
+  margin: 10px;
+}
+.footer .Info {
+  background-color: black;
+  width: 233px;
+  height: 160px;
+  position: relative;
+  bottom: 130px;
+  left: 140px;
+  padding: 10px;
+  background: transparent;
+}
+.logo {
+  display: inline-block;
+  margin: 2px;
+  padding: 5px;
 
-.container .fig1 {
-  position: absolute;
-  top: 500px;
-  right: -140px;
-  color: black;
-  width: 200px;
+}
+.header nav ul {
+  list-style: none;
+  display: inline;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+nav ul li {
+  display: inline;
   font-size: 15px;
+  padding: 5px;
 }
-
-}
-
-
-
-
-
-
-
-
-/* Medume Screen*/
-@media screen and (min-width:401px) and (max-width:768px) {
-
-
-  .post-blog {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
-    grid-gap: 14px;
-    margin: 10px;
-  
-  }
-
-  .content .Skils {
-
-
-    position: absolute;
-    background-color: black;
-    top: 680px;
-    right: 30px;
-    padding: 15px;
-    margin: 10px;
-  }
-
-  .logo-photo {
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-    right: 10px;
-  }
-
-  .post-blog .post {
-    border: 1px solid black;
-    color: black;
-    background-color: white;
-    padding: 9px;
-    overflow: auto;
-    font-size: 19px;
-    height: 240px;
-    border-radius: 50px;
-
-}
-.container .fig1 {
+.header nav {
   position: absolute;
-  top: 680px;
-  right: 500px;
-  color: black;
-  width: 200px;
-  font-size: 15px;
+  top: 60px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 }
+
+
+
+
 
